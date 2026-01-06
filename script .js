@@ -1,49 +1,24 @@
-/* =========================
-   ПЛАВНОЕ ПОЯВЛЕНИЕ СЕКЦИЙ
-========================= */
-document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll(".section");
+// =========================
+// BURGER MENU
+// =========================
+const burger = document.getElementById("burger");
+const nav = document.querySelector(".nav");
 
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    },
-    { threshold: 0.15 }
-  );
-
-  sections.forEach(section => {
-    section.classList.add("fade-in");
-    observer.observe(section);
+if (burger && nav) {
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("open");
   });
-});
+}
 
-/* =========================
-   МИКРО-ФОРМА (ПОКА ЗАГЛУШКА)
-========================= */
-const microForm = document.getElementById("microForm");
+// =========================
+// FORM (заглушка)
+// =========================
+const form = document.getElementById("microForm");
 
-if (microForm) {
-  microForm.addEventListener("submit", function (e) {
+if (form) {
+  form.addEventListener("submit", function (e) {
     e.preventDefault();
-
-    const name = microForm.querySelector('[name="name"]').value.trim();
-    const contact = microForm.querySelector('[name="contact"]').value.trim();
-
-    if (!contact) {
-      alert("Пожалуйста, укажите способ связи");
-      return;
-    }
-
-    alert(
-      "Спасибо! Заявка принята.\n" +
-      (name ? `Имя: ${name}\n` : "") +
-      `Контакт: ${contact}`
-    );
-
-    microForm.reset();
+    alert("Заявка отправлена. Я свяжусь с вами.");
+    form.reset();
   });
 }
