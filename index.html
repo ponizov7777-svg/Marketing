@@ -1,183 +1,138 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Андрей — системное привлечение клиентов</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Андрей Понизов — системное привлечение клиентов</title>
+  <meta name="description" content="Геомаркетинг и консультации для офлайн-бизнеса. Бесплатная диагностика 15–20 минут.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ================= HEADER ================= -->
-<!-- ============ HEADER (вставить целиком) ============ -->
 <header class="header">
   <div class="container header-inner">
+    <a class="logo" href="index.html">Андрей Понизов</a>
 
-    <a href="/" class="logo">Андрей</a>
-
-    <!-- DESKTOP NAV -->
-    <nav class="nav nav-desktop">
+    <nav class="nav-desktop">
       <a href="services.html">Услуги и цены</a>
       <a href="geomarketing.html">Геомаркетинг</a>
       <a href="consulting.html">Консультации</a>
       <a href="cases.html">Кейсы</a>
+      <a href="about.html">Обо мне</a>
+      <a href="extra.html">Доп. услуги</a>
       <a href="contacts.html">Контакты</a>
+      <a href="reviews.html">Отзывы</a>
+      <a href="blog.html">Полезные статьи</a>
     </nav>
 
-    <!-- BURGER BUTTON (обязательно id="burger") -->
-    <button class="burger" id="burger" aria-label="Открыть меню">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+    <div class="header-actions">
+      <a class="btn primary small" href="contacts.html#diagnostics">Диагностика</a>
 
+      <button class="burger" id="burger" aria-label="Меню">
+        <span class="burger-inner">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+    </div>
   </div>
 
-  <!-- MOBILE MENU (обязательно id="mobileMenu") -->
-  <nav class="nav nav-mobile" id="mobileMenu" aria-hidden="true">
+  <nav class="nav-mobile" id="mobileMenu">
     <a href="services.html">Услуги и цены</a>
     <a href="geomarketing.html">Геомаркетинг</a>
     <a href="consulting.html">Консультации</a>
     <a href="cases.html">Кейсы</a>
+    <a href="about.html">Обо мне</a>
+    <a href="extra.html">Доп. услуги</a>
     <a href="contacts.html">Контакты</a>
+    <a href="reviews.html">Отзывы</a>
+    <a href="blog.html">Полезные статьи</a>
   </nav>
 </header>
-<!-- ============ END HEADER ============ -->
 
-<!-- ================= MAIN ================= -->
 <main>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <h1>Системное привлечение клиентов для офлайн-бизнеса</h1>
-      <p class="lead">
-        Работаю с геомаркетингом, аналитикой и стратегией. Без инфоцыганства,
-        с опорой на цифры и реальную экономику бизнеса.
-      </p>
+<section class="hero fade">
+  <div class="container">
+    <h1>Системное привлечение клиентов для офлайн-бизнеса</h1>
+    <p class="lead">
+      Геомаркетинг и стратегические консультации. Без инфоцыганства и хаотичной рекламы.
+    </p>
 
-      <div style="margin-top: 24px;">
-        <a href="consulting.html" class="btn primary">Записаться на диагностику</a>
-        <a href="services.html" class="btn outline">Услуги и цены</a>
+    <div class="hero-ctas">
+      <a class="btn primary" href="contacts.html#diagnostics">Бесплатная диагностика</a>
+      <a class="btn outline" href="consulting.html">Платная консультация</a>
+    </div>
+  </div>
+</section>
+
+<section class="section fade">
+  <div class="container">
+    <h2>Кто я</h2>
+    <p>
+      Меня зовут Андрей. Я консультант по геомаркетингу и системному привлечению клиентов
+      для офлайн-бизнеса: бьюти, медицина, общепит, локальные сервисы.
+    </p>
+  </div>
+</section>
+
+<section class="section gray fade">
+  <div class="container">
+    <h2>Чем я могу быть полезен бизнесу</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Геомаркетинг</h3>
+        <p>Яндекс Карты, 2GIS, отзывы, контент, аналитика.</p>
+        <a href="geomarketing.html">Подробнее →</a>
+      </div>
+      <div class="card">
+        <h3>Усиление привлечения</h3>
+        <p>Систематизация каналов и процессов.</p>
+        <a href="services.html">Услуги →</a>
+      </div>
+      <div class="card">
+        <h3>Консультации</h3>
+        <p>Стратегия и пошаговый план.</p>
+        <a href="consulting.html">Подробнее →</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- WHO I AM -->
-  <section class="section">
-    <div class="container">
-      <h2>Кто я и чем могу быть полезен бизнесу</h2>
-      <p class="lead">
-        Я консультант по системному привлечению клиентов для офлайн-бизнеса:
-        медицина, бьюти, общепит, локальные услуги.
-      </p>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Геомаркетинг</h3>
-          <p class="muted">
-            Привожу клиентов через Яндекс Карты, 2GIS, отзывы и контент.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Усиление привлечения</h3>
-          <p class="muted">
-            Нахожу точки роста в существующих каналах и повышаю конверсию.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Консультации</h3>
-          <p class="muted">
-            Разбор бизнеса, стратегия и пошаговый план действий.
-          </p>
-        </div>
+<section class="section fade">
+  <div class="container">
+    <h2>Форматы работы</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Бесплатная диагностика</h3>
+        <p>15–20 минут. Выявляем ключевую проблему.</p>
+      </div>
+      <div class="card">
+        <h3>Платная консультация — 10 000 ₽</h3>
+        <p>20–30 минут. Стратегия и план действий.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- HOW I WORK -->
-  <section class="section gray">
-    <div class="container">
-      <h2>Как я работаю</h2>
-      <p class="lead">
-        Без обещаний «x10 за месяц». Работаю системно и честно.
-      </p>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Диагностика</h3>
-          <p class="muted">
-            Выявляем ключевую проблему и узкое место бизнеса.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Стратегия</h3>
-          <p class="muted">
-            Формирую понятный план действий под конкретные цели.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Сопровождение</h3>
-          <p class="muted">
-            Помогаю внедрить решения и контролировать результат.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONSULTING -->
-  <section class="section">
-    <div class="container">
-      <h2>Форматы консультаций</h2>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Бесплатная диагностика</h3>
-          <p class="muted">
-            15–20 минут. Понимание проблемы без стратегии и плана.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Платная консультация</h3>
-          <p class="muted">
-            20–30 минут. Глубокий разбор, стратегия и план действий.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="section gray">
-    <div class="container">
-      <h2>Хотите понять, где теряются клиенты?</h2>
-      <p class="lead">
-        Запишитесь на бесплатную диагностику и получите честную оценку ситуации.
-      </p>
-
-      <a href="consulting.html" class="btn primary">Записаться на диагностику</a>
-    </div>
-  </section>
+<section class="section gray fade">
+  <div class="container">
+    <h2>Записаться на диагностику</h2>
+    <form class="micro-form" id="microForm">
+      <input type="text" name="name" placeholder="Ваше имя">
+      <input type="text" name="contact" placeholder="Телефон или Telegram" required>
+      <button type="submit" class="btn primary">Отправить</button>
+    </form>
+  </div>
+</section>
 
 </main>
 
-<!-- ================= FOOTER ================= -->
 <footer class="footer">
   <div class="container">
-    <p>© Андрей, системное привлечение клиентов</p>
+    © Андрей Понизов
   </div>
 </footer>
 
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
