@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Системное привлечение клиентов для офлайн-бизнеса</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <div class="logo">Андрей · Консультант</div>
+
+    <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
+
+    <nav class="nav" id="mainNav" aria-label="Главная навигация">
+      <a href="#services">Услуги</a>
+      <a href="#geomarketing">Геомаркетинг</a>
+      <a href="#cases">Кейсы</a>
+      <a href="#consulting">Консультации</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Системное привлечение клиентов для офлайн-бизнеса</h1>
+    <p class="hero-subtitle">
+      Помогаю бизнесу получать стабильный поток клиентов из своей локации —  
+      без хаотичной рекламы и пустых обещаний
+    </p>
+    <div class="hero-actions">
+      <button class="btn primary" id="diagnosticBtn">Бесплатная диагностика</button>
+      <button class="btn secondary" id="paidBtn">Платная консультация</button>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Кто я</h2>
+    <p>
+      Меня зовут Андрей. Я консультант по привлечению клиентов для офлайн-бизнеса.
+      Работаю с бьюти, медициной, общепитом и сервисами, где важна локация и системный подход.
+    </p>
+    <p class="accent">
+      Без инфоцыганства. Без волшебных кнопок. С опорой на экономику бизнеса.
+    </p>
+  </div>
+</section>
+
+<section class="section gray">
+  <div class="container">
+    <h2>Для кого я работаю</h2>
+    <ul class="list">
+      <li>Офлайн-бизнес с привязкой к локации</li>
+      <li>Собственники и управленцы</li>
+      <li>Те, кому важна стабильность, а не разовый всплеск</li>
+      <li>Бизнес, который хочет понимать причины результата</li>
+    </ul>
+  </div>
+</section>
+
+<section id="geomarketing" class="section">
+  <div class="container">
+    <h2>Мой основной фокус</h2>
+    <p>
+      Геомаркетинг — это не «карты». Это система привлечения клиентов
+      из вашей зоны присутствия: от спроса до решения клиента.
+    </p>
+  </div>
+</section>
+
+<section id="services" class="section gray">
+  <div class="container">
+    <h2>Чем я могу быть полезен бизнесу</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Геомаркетинг</h3>
+        <p>Системная работа с картами, отзывами, контентом и аналитикой.</p>
+      </div>
+      <div class="card">
+        <h3>Усиление привлечения</h3>
+        <p>Рост заявок и клиентов без хаотичных экспериментов.</p>
+      </div>
+      <div class="card">
+        <h3>Консультации</h3>
+        <p>Разбор ситуации, стратегия и пошаговый план действий.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="consulting" class="section">
+  <div class="container">
+    <h2>Форматы работы</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Бесплатная диагностика</h3>
+        <p>15–20 минут. Выявляем ключевую проблему. Без стратегии.</p>
+      </div>
+      <div class="card">
+        <h3>Платная консультация</h3>
+        <p>20–30 минут. Глубокий разбор, стратегия и план действий.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cases" class="section gray">
+  <div class="container">
+    <h2>Кейсы</h2>
+    <p>
+      Я показываю не просто цифры, а логику решений и ход мышления.
+    </p>
+    <button class="btn secondary">Смотреть кейсы</button>
+  </div>
+</section>
+
+<section id="contacts" class="section">
+  <div class="container">
+    <h2>Начать с диагностики</h2>
+    <p>
+      Если хотите понять, что происходит с привлечением клиентов —
+      начните с бесплатной диагностики.
+    </p>
+
+    <form id="contactForm" class="form" aria-label="Форма записи на диагностику">
+      <input id="inputName" type="text" placeholder="Имя" required />
+      <input id="inputContact" type="tel" placeholder="Телефон или Telegram" required />
+      <button type="submit" class="btn primary">Записаться</button>
+      <p id="formMessage" class="form-message" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© Андрей. Консультации и геомаркетинг</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
