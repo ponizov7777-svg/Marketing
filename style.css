@@ -1,5 +1,5 @@
 /* =========================
-   ПЕРЕМЕННЫЕ
+   VARIABLES
 ========================= */
 :root {
   --bg-main: #ffffff;
@@ -14,7 +14,7 @@
 }
 
 /* =========================
-   BASE
+   RESET & BASE
 ========================= */
 * {
   box-sizing: border-box;
@@ -47,8 +47,17 @@ h2 {
   font-size: 26px;
 }
 
+h3 {
+  font-size: 18px;
+}
+
 p {
   margin: 0 0 14px;
+}
+
+.lead {
+  font-size: 18px;
+  max-width: 720px;
 }
 
 .muted {
@@ -63,15 +72,14 @@ p {
   top: 0;
   background: #fff;
   border-bottom: 1px solid var(--border);
-  z-index: 50;
+  z-index: 100;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 0;
-  gap: 16px;
+  height: 64px;
 }
 
 .logo {
@@ -81,14 +89,14 @@ p {
 }
 
 /* =========================
-   NAVIGATION (DESKTOP)
+   NAVIGATION
 ========================= */
-.nav {
+.nav-desktop {
   display: flex;
-  gap: 14px;
+  gap: 18px;
 }
 
-.nav a {
+.nav-desktop a {
   text-decoration: none;
   color: var(--text-main);
   font-size: 14px;
@@ -96,7 +104,7 @@ p {
   border-radius: 6px;
 }
 
-.nav a:hover {
+.nav-desktop a:hover {
   background: var(--bg-muted);
 }
 
@@ -106,6 +114,7 @@ p {
 .burger {
   display: none;
   flex-direction: column;
+  justify-content: center;
   gap: 5px;
   width: 36px;
   height: 36px;
@@ -116,10 +125,32 @@ p {
 }
 
 .burger span {
-  height: 2px;
+  display: block;
   width: 18px;
+  height: 2px;
   background: var(--text-main);
   transition: var(--transition);
+}
+
+/* =========================
+   MOBILE MENU
+========================= */
+.nav-mobile {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  border-top: 1px solid var(--border);
+}
+
+.nav-mobile a {
+  padding: 14px 20px;
+  text-decoration: none;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-mobile a:hover {
+  background: var(--bg-muted);
 }
 
 /* =========================
@@ -129,6 +160,7 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 6px;
   padding: 12px 20px;
   border-radius: 10px;
   font-weight: 600;
@@ -167,14 +199,8 @@ p {
   padding: 70px 0;
 }
 
-.hero-inner {
-  display: flex;
-  gap: 40px;
-}
-
-.lead {
-  font-size: 18px;
-  max-width: 720px;
+.hero .btn {
+  margin-right: 12px;
 }
 
 /* =========================
@@ -195,7 +221,7 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 18px;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .card {
@@ -212,23 +238,6 @@ p {
 }
 
 /* =========================
-   FORM
-========================= */
-.micro-form {
-  max-width: 600px;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.micro-form input {
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-}
-
-/* =========================
    FOOTER
 ========================= */
 .footer {
@@ -237,12 +246,16 @@ p {
   padding: 20px 0;
 }
 
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
 /* =========================
    MOBILE (<= 900px)
 ========================= */
 @media (max-width: 900px) {
 
-  /* typography */
   h1 {
     font-size: 26px;
   }
@@ -255,14 +268,8 @@ p {
     font-size: 16px;
   }
 
-  /* layout */
   .hero {
     padding: 40px 0;
-  }
-
-  .hero-inner {
-    flex-direction: column;
-    gap: 24px;
   }
 
   .section {
@@ -273,27 +280,15 @@ p {
     grid-template-columns: 1fr;
   }
 
-  /* nav */
-  .nav {
+  .nav-desktop {
     display: none;
-    position: absolute;
-    top: 64px;
-    right: 16px;
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 12px;
-    flex-direction: column;
-    gap: 10px;
-    min-width: 220px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-  }
-
-  .nav.open {
-    display: flex;
   }
 
   .burger {
+    display: flex;
+  }
+
+  .nav-mobile.open {
     display: flex;
   }
 }
