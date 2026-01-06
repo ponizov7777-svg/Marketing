@@ -1,24 +1,11 @@
 // =========================
-// BURGER MENU
+// MOBILE BURGER MENU
 // =========================
 const burger = document.getElementById("burger");
-const nav = document.querySelector(".nav");
+const mobileMenu = document.getElementById("mobileMenu");
 
-if (burger && nav) {
+if (burger && mobileMenu) {
   burger.addEventListener("click", () => {
-    nav.classList.toggle("open");
-  });
-}
-
-// =========================
-// FORM (заглушка)
-// =========================
-const form = document.getElementById("microForm");
-
-if (form) {
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert("Заявка отправлена. Я свяжусь с вами.");
-    form.reset();
+    mobileMenu.classList.toggle("open");
   });
 }
